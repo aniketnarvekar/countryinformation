@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ECC1E7B9227C7F77000F5C27 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1E7B8227C7F77000F5C27 /* ViewExtension.swift */; };
 		ECF182E0227C787C004E8023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF182DF227C787C004E8023 /* AppDelegate.swift */; };
 		ECF182E2227C787C004E8023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF182E1227C787C004E8023 /* ViewController.swift */; };
 		ECF182E8227C787C004E8023 /* Country_Education.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ECF182E6227C787C004E8023 /* Country_Education.xcdatamodeld */; };
@@ -34,13 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ECC1E7B8227C7F77000F5C27 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		ECF182DC227C787C004E8023 /* Country Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF182DF227C787C004E8023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECF182E1227C787C004E8023 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ECF182E7227C787C004E8023 /* Country_Education.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Country_Education.xcdatamodel; sourceTree = "<group>"; };
-		ECF182E9227C787F004E8023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ECF182E9227C787F004E8023 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		ECF182EC227C787F004E8023 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		ECF182EE227C787F004E8023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF182EE227C787F004E8023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
 		ECF182F3227C787F004E8023 /* Country EducationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Country EducationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF182F7227C787F004E8023 /* Country_EducationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country_EducationTests.swift; sourceTree = "<group>"; };
 		ECF182F9227C787F004E8023 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -74,6 +76,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ECC1E7B7227C7F45000F5C27 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				ECF182E6227C787C004E8023 /* Country_Education.xcdatamodeld */,
+				ECF182EE227C787F004E8023 /* Info.plist */,
+				ECF182E9227C787F004E8023 /* Assets.xcassets */,
+				ECC1E7B8227C7F77000F5C27 /* ViewExtension.swift */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		ECF182D3227C787C004E8023 = {
 			isa = PBXGroup;
 			children = (
@@ -97,12 +110,10 @@
 		ECF182DE227C787C004E8023 /* Country Education */ = {
 			isa = PBXGroup;
 			children = (
+				ECC1E7B7227C7F45000F5C27 /* Supporting files */,
 				ECF182DF227C787C004E8023 /* AppDelegate.swift */,
 				ECF182E1227C787C004E8023 /* ViewController.swift */,
-				ECF182E9227C787F004E8023 /* Assets.xcassets */,
 				ECF182EB227C787F004E8023 /* LaunchScreen.storyboard */,
-				ECF182EE227C787F004E8023 /* Info.plist */,
-				ECF182E6227C787C004E8023 /* Country_Education.xcdatamodeld */,
 			);
 			path = "Country Education";
 			sourceTree = "<group>";
@@ -258,6 +269,7 @@
 				ECF182E8227C787C004E8023 /* Country_Education.xcdatamodeld in Sources */,
 				ECF182E2227C787C004E8023 /* ViewController.swift in Sources */,
 				ECF182E0227C787C004E8023 /* AppDelegate.swift in Sources */,
+				ECC1E7B9227C7F77000F5C27 /* ViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,7 +598,8 @@
 				ECF182E7227C787C004E8023 /* Country_Education.xcdatamodel */,
 			);
 			currentVersion = ECF182E7227C787C004E8023 /* Country_Education.xcdatamodel */;
-			path = Country_Education.xcdatamodeld;
+			name = Country_Education.xcdatamodeld;
+			path = ../Country_Education.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
