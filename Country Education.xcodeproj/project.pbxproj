@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC0783C6227DCDD00033EF44 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC0783C5227DCDD00033EF44 /* CollectionViewCell.swift */; };
 		ECC1E7B9227C7F77000F5C27 /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECC1E7B8227C7F77000F5C27 /* ViewExtension.swift */; };
 		ECF182E0227C787C004E8023 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF182DF227C787C004E8023 /* AppDelegate.swift */; };
 		ECF182E2227C787C004E8023 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF182E1227C787C004E8023 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EC0783C5227DCDD00033EF44 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		ECC1E7B8227C7F77000F5C27 /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		ECF182DC227C787C004E8023 /* Country Education.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Country Education.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF182DF227C787C004E8023 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 				ECC1E7B7227C7F45000F5C27 /* Supporting files */,
 				ECF182DF227C787C004E8023 /* AppDelegate.swift */,
 				ECF182E1227C787C004E8023 /* ViewController.swift */,
+				EC0783C5227DCDD00033EF44 /* CollectionViewCell.swift */,
 				ECF182EB227C787F004E8023 /* LaunchScreen.storyboard */,
 			);
 			path = "Country Education";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC0783C6227DCDD00033EF44 /* CollectionViewCell.swift in Sources */,
 				ECF182E8227C787C004E8023 /* Country_Education.xcdatamodeld in Sources */,
 				ECF182E2227C787C004E8023 /* ViewController.swift in Sources */,
 				ECF182E0227C787C004E8023 /* AppDelegate.swift in Sources */,

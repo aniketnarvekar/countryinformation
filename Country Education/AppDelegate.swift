@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Country Education
 //
-//  Created by Ethel Azad on 03/05/19.
+//  Created by Aniket Narvekar on 03/05/19.
 //  Copyright © 2019 THK. All rights reserved.
 //
 

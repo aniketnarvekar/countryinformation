@@ -1,4 +1,47 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18E226" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AltSpelling" representedClassName="AltSpelling" syncable="YES">
+        <attribute name="spelling" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="altSpellings" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="CallingCode" representedClassName="CallingCode" syncable="YES">
+        <attribute name="code" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="callingCodes" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="Country" representedClassName="Country" syncable="YES">
+        <attribute name="alpha2Code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alpha3Code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="area" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="capital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cioc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="demonym" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="URI" syncable="YES"/>
+        <attribute name="gini" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nativeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numericCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subregion" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="altSpellings" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="AltSpelling" inverseName="country" inverseEntity="AltSpelling" syncable="YES"/>
+        <relationship name="callingCodes" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="CallingCode" inverseName="country" inverseEntity="CallingCode" syncable="YES"/>
+        <relationship name="latlng" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="country" inverseEntity="Location" syncable="YES"/>
+        <relationship name="topLevelDomain" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="TopLevelDomain" inverseName="country" inverseEntity="TopLevelDomain" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="latitude" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="latlng" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <entity name="TopLevelDomain" representedClassName="TopLevelDomain" syncable="YES">
+        <attribute name="domain" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="country" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Country" inverseName="topLevelDomain" inverseEntity="Country" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-283.00390625" positionY="132.15234375" width="128" height="313"/>
+        <element name="TopLevelDomain" positionX="7.09765625" positionY="296.4296875" width="128" height="75"/>
+        <element name="CallingCode" positionX="-41.80078125" positionY="113.31640625" width="128" height="75"/>
+        <element name="AltSpelling" positionX="-159.9296875" positionY="8.421875" width="128" height="73"/>
+        <element name="Location" positionX="-14.1015625" positionY="198.171875" width="128" height="90"/>
+    </elements>
 </model>
